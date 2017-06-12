@@ -1,0 +1,29 @@
+<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">-->
+
+<div class="container">
+    <button (click)="onGet()" class="btn btn-primary">Get Weather</button><br>
+
+<!-- Left-aligned 
+<div class="media well" *ngFor='let v of getData'>
+  <div class="media-left">
+    <img src="img_avatar1.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{v.name}}</h4>
+    <p>{{v.email}}</p>
+  </div>
+</div>-->
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-6">
+                <p><label class="label">Pressure : </label> {{weatherData.pressure}}</p>
+                <p><label class="label">Humidity : </label> {{weatherData.humidity}}</p>
+                <p><label class="label">Wind : </label> {{weatherData.wind}}</p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-6">
+                <h1 class="label">{{weatherData.temperature}}<span *ngIf="weatherData.temperature">&deg;C</span></h1>
+                <img src="{{weatherData.icon}}">
+            </div>
+        </div>
+    </div>
+</div>

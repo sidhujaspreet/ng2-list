@@ -1,0 +1,23 @@
+.container {
+    padding: 50px 100px;
+}
+
+.jumbotron {
+    max-height: 200px;
+    max-width: 350px;
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+}
+
+.btn {
+    margin: 50px 90px;
+    left: -200px;
+}
+
+.label {
+    font-weight: bold;
+    color: gray;
+}
